@@ -14,8 +14,13 @@ We can also make the vector class generic using templates.
 Certain functions associated with the Vector that we will implement are: 
 
 void push(int data): This function takes one element and inserts it at the last. Amortized time complexity is O(1).  
+
 int get(int index): It is used to get the element at the specified index. Time complexity is O(1). 
+
 void pop(): It deletes the last element. Time complexity is O(1). 
+
 int size(): It returns the size of the vector i.e, number of elements in the vector. Time complexity is O(1). 
+
 int getCapacity(): It returns the capacity of the vector. Time complexity is O(1). 
+
 void printData(): It is used to print array elements. Time complexity is O(N), where N is the size of the vector. 
