@@ -88,7 +88,7 @@ T& cVector<T>::operator =(const T& rhs)
       array = new T[rhs.capacity];
             
       capacity = rhs.capacity;
-      size = rhs.size;
+      current = rhs.current;
        
       for(int i = 0; i< rhs.capacity;  i++)
       {
