@@ -47,7 +47,6 @@ void cVector<T>::push(T data)
         capacity = capacity*2;
         array = temp;     
     }
-        
     array[current] = data;
     current++;
 }
@@ -82,8 +81,8 @@ void cVector<T>::printDate()
 template <typename T>    
 T& cVector<T>::operator =(const T& rhs)
 {
-    if(this != &rhs)
-    {
+   if(this != &rhs)
+   {
       delete[] array;
       array = new T[rhs.capacity];
             
@@ -94,8 +93,8 @@ T& cVector<T>::operator =(const T& rhs)
       {
         array[i] = rhs.array[i];
       }       
-     return *this;
-      }
+   }
+   return *this;
 }
 
 template <typename T>
@@ -104,7 +103,7 @@ cVector<T>::cVector(const cVector& rhs)
     array = new T[rhs.capacity];
     capacity = rhs.capacity;
     current = rhs.current;
-        
+    
     for(int i = 0; i< rhs.capacity;  i++)
     {
        array[i] = rhs.array[i];
